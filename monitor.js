@@ -60,10 +60,12 @@ function getVoteCount(pageNum){
 // getVoteCount(308)
 
 function monitor(){
-	setInterval(function(){
+	var timer = setInterval(function(){
 	if (getVoteCount(298)-getVoteCount(313) <= 10000){
 		console.log('目标正在接近我方，即将展开反击')
 	 	vote_n(500,298)
+	}else{
+		clearInterval(timer)
 	}
 },1000*60)
 }
