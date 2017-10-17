@@ -1,3 +1,4 @@
+// javscript is quite useful in my daily life
 function delete_cookie_and_reload() {
   // document.cookie = 'Hm_lvt_431673927acf89fbdf45f2181547bc09' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   var expires = "";
